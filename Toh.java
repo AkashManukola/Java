@@ -19,16 +19,15 @@ public class Toh{
 
    }
 
-//     public static void henoi(int n,String src,String helper,String des){
-//         if(n==1){
-//             System.out.println(" transfer disk  "+n+ " from  "+src+"  to  "+des);
-//             return;
-//         }
-//         henoi(n-1, src,des,helper);
-//         System.out.println("  transfer disk   "+n+"  from  "+src+"  to  "+des);
-//         henoi(n-1, helper, src,des);
-
-//    }
+   public static void henoi(int n,String src,String helper,String des){
+         if(n==1){
+             System.out.println(" transfer disk  "+n+ " from  "+src+"  to  "+des);
+             return;
+         }
+         henoi(n-1, src,des,helper);
+         System.out.println("  transfer disk   "+n+"  from  "+src+"  to  "+des);
+         henoi(n-1, helper, src,des);
+    }
     public static void rev(String s,int idx){
         if(idx==0){
             System.out.print(s.charAt(idx));
