@@ -97,6 +97,22 @@ public class Linkedlist {
         
         return num1 * num2;
     }
+     public void palindrome(Node head){
+        int orginal=0; int reverse=0;
+        Node temp=head;
+        while(temp!=null){
+            orginal=orginal*10+temp.data;
+            temp=temp.next;
+        }
+        int num=orginal;
+        while(num>0){
+            reverse=(reverse*10) +  (num%10);
+            num=num/10;
+        }
+        if(orginal == reverse){
+            System.out.println("A palindrome");
+        }else System.out.println("Not a palindrome");
+    }
 
 
     public static void main(String[] args) {
