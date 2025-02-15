@@ -5,10 +5,10 @@ public class Quick_Sort {
         int p=s,i=s+1,j=e;
 
         while(true){
-            if(i<=e && a[i]<a[p]){
+             while(i<=e && a[i]<a[p]){
                 i++;
             }
-            if(j>=s && a[j]>a[p]){
+            while(j>=s && a[j]>a[p]){
                 j--;
             }
 
